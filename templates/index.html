@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List - Flask FaunaDB Boilerplate</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    
+    <div id="myDIV" class="header">
+        <h2 style="margin:5px">Flask FaunaDB To Do List</h2>
+        <input type="text" id="myInput" placeholder="Title...">
+        <span onclick="newTodo()" class="addBtn">Add</span>
+    </div>
+
+    <ul id="myUL">
+    </ul>
+
+
+    <div class="watermark">To Do List HTML Template by <a href="https://www.w3schools.com/howto/howto_js_todolist.asp">W3Schools</a></div>
+    <script src="{{ url_for('static', filename='js/index.js') }}"></script>
+</body>
+</html>
